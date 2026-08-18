@@ -6,28 +6,28 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Inicio",
+    title: "Home",
     path: "/",
   },
   {
-    title: "Catálogo",
+    title: "Catalog",
     path: "#",
     children: [
-      { title: "Novedades", path: "/" },
-      { title: "Productos Destacados", path: "#" },
-      { title: "Categorías", path: "#" },
+      { title: "New Arrivals", path: "/" },
+      { title: "Featured Products", path: "#" },
+      { title: "Categories", path: "#" },
     ],
   },
   {
-    title: "Nosotros",
+    title: "About Us",
     path: "/about",
   },
   {
-    title: "Novedades",
+    title: "News",
     path: "/blog",
   },
   {
-    title: "Contacto",
+    title: "Contact",
     path: "/contact",
   },
 ];
@@ -72,13 +72,13 @@ const menuitems = [
           }
         </ul>
         <div class="lg:hidden flex items-center mt-3 gap-4">
-          <Link href="/contact" size="md" block>Atención al Cliente</Link>
+          <Link href="/contact" size="md" block>Customer Support</Link>
         </div>
       </MenuItems>
     </Astronav>
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <Link href="/contact" size="md">Contacto LLC</Link>
+        <Link href="/contact" size="md">Contact Us</Link>
       </div>
     </div>
   </header>
