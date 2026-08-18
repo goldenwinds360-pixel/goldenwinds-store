@@ -10,7 +10,8 @@ import { Icon } from "astro-icon/components";
   <div class="py-6 md:order-1 hidden md:block">
     <Picture
       src={heroImage}
-      alt="Astronaut in the air"
+      alt="Relaxed astronaut thinking: I'll check the package that arrived once I get back"
+      title="I'll check the package that arrived once I get back"
       widths={[200, 400, 600]}
       sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
@@ -20,33 +21,26 @@ import { Icon } from "astro-icon/components";
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      Trusted e-commerce with global reach
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
+      Welcome to Golden Winds Store LLC. We deliver high-quality products directly to your doorstep with fast, reliable, and secure worldwide shipping.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+        href="/catalog"
+        class="flex gap-1 items-center justify-center">
+        <Icon class="text-white w-5 h-5" name="uil:shopping-bag" />
 
-        Download for Free
+        Explore Catalog
       </Link>
       <Link
         size="lg"
         style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
+        href="/contact"
+        class="flex gap-1 items-center justify-center">
+        <Icon class="text-black w-4 h-4" name="uil:envelope" />
+        Contact Us
       </Link>
     </div>
   </div>
