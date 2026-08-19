@@ -12,7 +12,7 @@ author: "Golden Winds Team"
 tags: ["LLC", "Amazon US", "Ecommerce", "Gold & Gale", "G&G Pets"]
 ---
 
-We are thrilled to announce the official formation of **Golden Winds Store LLC**, registered in the State of Florida, United States[cite: 1]. 
+We are thrilled to announce the official formation of **Golden Winds Store LLC**, registered in the State of Florida, United States. 
 
 As part of our commitment to delivering top-tier consumer products, we are actively preparing the launch of our initial catalog on **Amazon United States**, serving customers across the country with fast and reliable logistics.
 
