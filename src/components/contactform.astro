@@ -1,6 +1,9 @@
 ---
 import Button from "./ui/button.astro";
 import config from "./config.json";
+
+// Obtiene la clave desde el archivo .env (PUBLIC_WEB3FORMS_ACCESS_KEY) o usa la clave directa
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_ACCESS_KEY || "TU_ACCESS_KEY_AQUI";
 ---
 
 <!-- Sección de datos de la LLC (mantiene la estructura y diseño limpio del sitio) -->
@@ -23,17 +26,16 @@ import config from "./config.json";
   </div>
 </div>
 
-<!-- Formulario de contacto original (100% fiel al layout previo) -->
-<!-- To make this contact form work, create your free access key from https://web3forms.com/
-     Then you will get all form submissions in your email inbox. -->
 <form
   action="https://api.web3forms.com/submit"
   method="POST"
   id="form"
   class="needs-validation"
   novalidate>
-  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-  <!-- Create your free access key from https://web3forms.com/ -->
+  
+  <!-- Campo oculto con tu Access Key vinculada -->
+  <input type="hidden" name="access_key" value={accessKey} />
+  
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
   <div class="mb-5">
     <input
