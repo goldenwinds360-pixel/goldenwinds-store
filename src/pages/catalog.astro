@@ -1,0 +1,37 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/container.astro";
+import Link from "@/components/ui/link.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="Catalog - Coming Soon">
+  <Container>
+    <div class="min-h-[60vh] flex flex-col items-center justify-center text-center py-16">
+      <div class="bg-black/5 p-4 rounded-full mb-6">
+        <Icon name="bx:bxs-time-five" class="w-12 h-12 text-black" />
+      </div>
+      
+      <span class="text-xs font-bold tracking-widest text-slate-500 uppercase mb-2">
+        Golden Winds Store LLC
+      </span>
+      
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-4">
+        Catalog Coming Soon
+      </h1>
+      
+      <p class="text-lg text-slate-600 max-w-xl mb-8">
+        We are preparing our official launch on <strong>Amazon US</strong> with our exclusive brands: <strong>Gold & Gale</strong> (Home & Garden) and <strong>G&G Pets</strong>. Stay tuned!
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <Link href="/" style="outline">
+          Back to Home
+        </Link>
+        <Link href="/contact">
+          Contact Us
+        </Link>
+      </div>
+    </div>
+  </Container>
+</Layout>
